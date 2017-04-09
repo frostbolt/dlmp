@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-gem "sinatra" 
-# gem "active_record"
+gem "sinatra"
+gem "sinatra-json"
+gem "activerecord"
