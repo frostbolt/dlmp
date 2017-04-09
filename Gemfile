@@ -1,3 +1,4 @@
-gem "sinatra"
-gem "active_record"
-gem "sinatra/json"
+source 'https://rubygems.org'
+
+gem "sinatra" 
+# gem "active_record"
