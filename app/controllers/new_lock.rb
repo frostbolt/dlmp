@@ -1,6 +1,4 @@
-get "/api/users/getToken/:username/:password" do 
-	@tempuser = User.find_by(username: params['username'])
-
+get "/api/users/block/:friend_name/:unlocking_date" do 
 	if (@tempuser == nil)
 		@a.errors << "The username or password is incorrect"
 	elsif (@tempuser.password != params['password'])
