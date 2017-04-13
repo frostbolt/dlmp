@@ -7,7 +7,6 @@ class User < ActiveRecord::Base
 	def get_token
 		if self.token == nil
 			self.token = SecureRandom.hex(15)
-			puts "Generating a new token for #{self}"
 			self.save
 		end
 		return self.token
